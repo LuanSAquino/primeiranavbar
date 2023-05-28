@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: none;
+    font-family: "Rubik", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --maincolor: rgb(83, 83, 83);
+    --secondcolor: rgb(39, 39, 39);
+}
+
+body {
+    background-color: rgb(207, 207, 207);
+}
+
+.barra {
+    width: 120px;
+    height: 100vh;
+    background-color: rgb(230, 229, 229);
+    overflow: hidden;
+    transition: all .8s ease;
+}
+
+.logo {
+    cursor: pointer;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo span {
+    font-weight: bold;
+    color: var(--secondcolor);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.tarefas {
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.tarefas .bx {
+    position: relative;
+    top: px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 43px;
+    color: var(--maincolor);
+    font-weight: bolder;
+}
+
+.tarefas .nav-txt {
+    margin-left: 60px;
+    font-size: 18;
+    color: var(--secondcolor);
+    font-weight: bolder;
+}
+
+.barra:hover {
+    transition: all .8s ease;
+    width: 260px;
+}
+
+.tarefas li {
+    padding: 20px 0px 20px;
+    transition: all .3s ease;
+} 
+
+.tarefas li:hover{
+    background-color: rgb(202, 202, 202);
+    transition: all .5s ease;
+}
